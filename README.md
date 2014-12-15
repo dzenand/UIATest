@@ -9,7 +9,7 @@ Readme
  http://apps.microsoft.com/windows/en-us/app/97a2179c-38be-45a3-933e-0d2dbf14a142
 
 
-Steps to reproduce the memory leak (TestUIA_MemoryLeak)  
+Steps to reproduce the memory leak (**TestUIA_MemoryLeak**)  
 1. Run TestUIA_MemoryLeak app  
 2. Run Twitter app, move mouse inside the app window, scroll it, click on it  
 3. Close twitter app with cross I the right-up corner  
@@ -19,5 +19,5 @@ Steps to reproduce the memory leak (TestUIA_MemoryLeak)
 7. Close maps app with cross I the right-up corner  
 8. Repeat last 6 steps in random order and after a while you will see that memory usage start growing  
  
-If we add dispose for UI elements and call Marshal.FinalReleaseComObject in it after a while AutomationElement.FromPoint returns only root window ( this is shown in TestUIA_StopAnswer app)
+If we add dispose for UI elements and call Marshal.FinalReleaseComObject in it after a while AutomationElement.FromPoint returns only root window ( this is shown in **TestUIA_StopAnswer** app)
 
